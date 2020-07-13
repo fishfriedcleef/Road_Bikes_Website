@@ -1,0 +1,1041 @@
+/* important */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 180px 173px 1287px 1fr;
+    grid-template-rows: 95px 40px 52px 650px 72px 830px 95px;
+    grid-template-areas: 
+    "header header header header header"
+    ". null-top null-top null-top ."
+    ". side-bar title title ."
+    ". side-bar colour-selection product-image ."
+    ". side-bar bottom-null product-image ."
+    ". product-main product-main product-main ."
+    "footer footer footer footer footer";
+}
+
+h1, h2, h3{
+    font-family: 'rubik', sans-serif;
+}
+
+p{
+    font-family: 'karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-2{
+    display: none;
+}
+
+body{
+    background-color: #707070; 
+}
+
+.header{
+    grid-area: header;
+    background-color: #232323;
+}
+
+.top-null{
+    grid-area: top-null;
+}
+
+.side-bar{
+    grid-area: side-bar;
+    position: relative;
+}
+
+.title{
+    grid-area: title;
+}
+
+.colour-selection{
+    grid-area: colour-selection;
+}
+
+.product-image{
+    grid-area: product-image;
+}
+
+.bottom-null{
+    grid-area: bottom-null;
+}
+
+.product-main{
+    grid-area: product-main;
+    position: relative;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* //important */
+
+/* header */
+
+.inner-header{
+    width: 1640px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.bike-logo{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.bike-logo img{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 222px;
+}
+
+.basket-count{
+    color: white;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.navigation, .right-nav{
+    height: 100%;
+    margin-left: 250px;
+}
+
+.navigation a{
+    display: table;
+    height: 100%;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li, .right-nav a li{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.right-nav a{
+    display: table;
+    height: 100%;
+    float: right;
+    padding: 0px 20px;
+}
+
+.search{
+    margin-top: 3px;
+    opacity: 0.8;
+}
+
+.basket{
+    opacity: 0.8;
+}
+
+.login{
+    margin-right: 70px;
+    opacity: 0.8;
+}
+
+.type{
+    opacity: 0.8;
+}
+
+.family li{
+    opacity: 0.8;
+}
+
+.story li{
+    opacity: 0.8;
+}
+
+/* //header */
+
+/* nav hover */
+
+.basket:hover{
+    opacity: 1;
+}
+
+.search:hover{
+    opacity: 1;
+}
+
+.login:hover{
+    opacity: 1;
+}
+
+.type:hover{
+    opacity: 1;
+}
+
+.story li:hover{
+    opacity: 1;
+}
+
+.family li:hover{
+    opacity: 1;
+}
+
+.bike-logo:hover{
+    opacity: 0.8;
+}
+
+/* //nav hover */
+
+/* modal */
+
+.modal{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+}
+
+.inner-modal{
+    width: 511px;
+    height: 300px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 2.5rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+input{
+    display: block;
+    margin-bottom: 15px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 30px;
+}
+
+.email{
+    margin-top: 60px;
+}
+
+.modal-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.email, .password, .confirm{
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.modal-button{
+    border: 2px solid black;
+    padding: 15px 30px;
+    margin: 35px auto 0 auto;
+    text-decoration: none;
+    color: white;
+    background-color: #4B6573;
+    width: 70px;
+}
+
+.inner-modal a{
+    margin-top: 50px;
+}
+
+/* //modal */
+
+/* basket modal */
+
+.basket-container{
+    background-color: rgba(0, 0, 0, 0.596);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    position: fixed;
+}
+
+.basket-title{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 90px;
+    margin-top: 40px;
+    font-family: 'rubik', sans-serif;
+}
+
+.basket-empty{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'rubik', sans-serif;
+}
+
+.basket-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    background-color: #334854;
+}
+
+.basket-close{
+    position: absolute;
+    z-index: 4;
+    color: white;
+    font-size: 2.5rem;
+    top: 110px;
+    right: 210px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.item-1{
+    display: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.item-1-content{
+    width: 900px;
+    height: 127px;
+    margin-left: 90px;
+    background-color: white;
+    margin-top: 40px;
+}
+
+.item-1-price{
+    height: 127px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: white;
+}
+
+/* //basket modal */
+
+/* side bar */
+
+.side-bar p{
+    margin-bottom: 30px;
+    margin-right: 36px;
+    font-size: 1.2rem;
+    font-family: rubik, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar-line{
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    height: 400px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 11%;
+}
+
+/* //side bar */
+
+/* title */
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1{
+    font-size: 2.5rem;
+    color: white;
+    font-family: rubik, sans-serif;
+    margin-left: 30px;
+}
+
+.buy-now{
+    margin-top: 10px;
+    font-family: rubik, sans-serif;
+    margin-left: 789px;
+}
+
+.buy-now a{
+    border: 2px solid #A49961;
+    font-size: 1.25rem;
+    color: white;
+    padding: 14px 60px;
+    background-color: #232323;
+}
+
+.inner-box{
+    margin-top: 10px;
+}
+
+.inner-box a{
+    border: 1px solid #A49961;
+    padding: 15.7px 25px;
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* //title */
+
+/* product image */
+
+.product-image{
+    overflow: hidden;
+    border: solid white 2px;
+    position: relative;
+}
+
+.product-image img{
+    width: 100%;
+    position: absolute;
+    margin-top: -100px;
+}
+
+/* //product image */
+
+/* colour selection */
+
+.colour-selection{
+    display: block;
+}
+
+.box{
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.box-1{
+    background-color: #C6D5D2;
+}
+
+.box-2{
+    background-color: #F29727;
+}
+
+.box-3{
+    background-color: #454B49;
+}
+
+.box-4{
+    background-color: #2B2B2B;
+}
+
+.box-5{
+    height: 101px;
+    background-color: #FFFFFF;
+}
+
+/* //colour selection */
+
+/* product main */
+
+.tabs {
+    position: relative;
+    margin-top: 110px;
+}
+
+.tab {
+    float: left;
+}
+
+.tab label {
+    background-color: #707070;
+    padding: 10px;
+    border: 2px solid white;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+}
+
+.tab [type="radio"] {
+    display: none;
+}
+
+/* //product main */
+
+/* content */
+
+.content {
+    position: absolute;
+    margin-top: 13px;
+    top: 28px;
+    background-color: #293842;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 300px 0;
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+.content-1{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 40%;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.content-1-line{
+    height: 300px;
+    width: 0;
+    border: 2px solid rgba(255, 255, 255, 0.404);
+    margin-left: 810px;
+    margin-top: -180px;
+}
+
+.content-2{
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 40%;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.content-3{
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 1rem;
+    line-height: 24px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.finance{
+    z-index: 50;
+    width: 250px;
+    margin-left: 690px;
+    margin-top: 20px;  
+}
+
+.content-3-line{
+    width: 350px;
+    border: 2px solid rgba(255, 255, 255, 0.404);
+    margin-left: 630px;
+    margin-top: 140px;
+}
+
+/* //content */
+
+/* functionality */
+  
+[type="radio"]:checked ~ label {
+    background: white;
+    color: black;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
+[type="radio"]:checked ~ label ~ .content {
+    z-index: 1;
+}
+
+label{
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.first-label, .second-label, .third-label{
+    width: 200px;
+    height: 12%;
+    display: inline-block;
+    color: white;
+    font-family: rubik, sans-serif;
+} 
+
+/* //functionality */
+
+/* footer */
+
+.footer{
+    background-color:#232323 ;
+}
+
+.inner-footer{
+    display: flex;
+    height: 95px;
+    background-color: #232323;
+    width: 1640px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.social-info{
+    display: flex;
+}
+
+.social-info img{
+    width: 25px;
+    margin-left: 15px;
+}
+
+.roar-r{
+    font-size: 1rem;
+    margin: auto 0;
+    margin-right: 1290px;
+    color: white;
+}
+
+.bug{
+    width: 25px;
+    margin-left: 15px;
+    margin-top: 34px;
+}
+
+a[data-tool-tip]{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a[data-tool-tip]::after{
+    content: attr(data-tool-tip);
+    position: absolute;
+    display: block;
+    background-color: #70707077;
+    padding: 10px 20px;
+    border-radius: 15px;
+    bottom: 65%;
+    left: 90%;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: ease-in-out 0.2s;
+}
+
+a[data-tool-tip]:hover::after{
+    transform: scale(1);
+}
+
+/* footer */
+
+/* //media */
+
+@media only screen and (max-width: 425px){
+
+    /* important */
+
+    body{
+        background-color: #4B6573;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container{
+        display: none;
+    }
+
+    .container-2{
+        display: block;
+    }
+
+    /* //important */
+    
+    /* header */
+    
+    .hamburger-menu{
+        position: absolute;
+        right: 4%;
+        top: 2.5%;
+    }
+    
+    .header-back{
+        position: absolute;
+        background-color: #334854;
+        width: 100%;
+        top: 0;
+        height: 8%;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.486);
+    }
+    
+    .close{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 3.2rem;
+        transform: rotate(45deg);
+        cursor: pointer;
+        color: white;
+    }
+    
+    label{
+        padding: 0.5rem 1rem;
+        position: absolute;
+        right: 3.5%;
+        top: 2%;
+        z-index: 4;
+        height: 15px;
+        position: fixed;
+    }
+    
+    .hidden{
+        left: -100vh;
+        position: absolute;
+    }
+    
+    .line{
+        width: 25px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    .line-2{
+        margin-top: 5px;
+    }
+    
+    .line-3{
+        margin-top: 5px;
+    }
+    
+    #toggle:checked ~ .hamburger-active{
+        display: block;
+    }
+    
+    #toggle:checked ~ .hamburger-active a{
+        display: block;
+    }
+    
+    .logo{
+        position: absolute;
+        left: 20px;
+        top: 5px;
+    }
+
+    /* //header */
+    
+    /* hamburger active */
+    
+    
+    .hamburger-active{
+        background-color: #4B6573;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        display: none;
+        z-index: 2;
+        position: fixed;
+    }
+    
+    .hamburger-active a{
+        color: white;
+        font-size: 1.8rem;
+        display: none;
+        z-index: 2;
+    }
+    
+    .home{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .account{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .bikes{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .shop-type{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .contact{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    /* //hamburger active */
+
+    /* product image */
+
+    .mob-product-image{
+        width: 352px;
+        height: 356px;
+        margin: 65px auto 0 auto;
+    }
+
+    .image-box{
+        width: 322px;
+        height: 300px;
+        border: 2px solid white;
+        margin: 75px auto 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .image-box img{
+        position: absolute;
+        width: 140%;
+        margin-left: -50px;
+    }
+
+    .colour-selectors{
+        display: flex;
+        justify-content: space-between;
+        width: 275px;
+        margin-left: 13px;
+        margin-top: 13px;
+    }
+
+    .colour-box{
+        width: 51px;
+        height: 51px;
+        border: 2px solid white;
+    }
+
+    .colour-box-1{
+        background-color: #326773;
+    }
+
+    .colour-box-2{
+        background-color: #F27127;
+    }
+
+    .colour-box-3{
+        background-color: #A61C28;
+    }
+
+    .colour-box-4{
+        background-color: #131626;
+    }
+
+    i{
+        border: solid black;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-top: 21px;
+    }
+      
+    .right{
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    /* //product image */
+
+    /* buttons */
+
+    button{
+        width: 100px;
+        height: 45px;
+        font-size: 0.65rem;
+        background-color: #232F34;
+        color: white;
+        border: 3px solid black;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 29px;
+    }
+
+    .find{
+        margin-left: 14px;
+        margin-right: 12px;
+    }
+
+    /* //buttons */
+
+    /* bike info */
+
+    .bike-information{
+        width: 90%;
+        color: white;
+        margin-left: 27px;
+    }
+
+    .top-info{
+        display: inline-flex;
+        margin-bottom: 15px;
+        margin-top: 18px;
+        justify-content: space-between;
+        width: 210px;
+        position: relative;
+    }
+
+    .bike-information h1{
+        font-size: 1rem;
+    }
+
+    .higher{
+        font-size: 0.8rem;
+        margin: auto 0;
+    }
+
+    .lower{
+        font-size: 0.65rem;
+        color: rgb(247, 117, 117);
+        margin: auto 0;
+    }
+
+    .bike-information p{
+        font-size: 0.8rem;
+        line-height: 17px;
+    }
+
+    /* //bike info */
+
+    /* line */
+
+    .mob-line{
+        width: 150px;
+        border: 2px solid rgba(255, 255, 255, 0.432);
+        position: absolute;
+        top: 102%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    /* //line */
+
+    /* mobile tabs */
+
+    .mob-info-tabs{
+        margin-top: 100px;
+        width: 90%;
+    }
+
+    .mob-tabs {
+        position: relative;
+        min-height: 200px;
+        clear: both;
+        margin: 25px 0;
+    }
+      
+    .mob-tab {
+        float: left;
+    }
+
+    .mob-mover{
+        margin-left: 27px;
+    }
+      
+    .mob-tab label {
+        background: black;
+        padding: 10px;
+        color: white;
+        border: 1px solid white;
+        margin-left: -1px;
+        position: relative;
+        left: 1px;
+        font-size: 1rem;
+        z-index: 1;
+    }
+      
+    .mob-tab [type="radio"] {
+        display: none;
+    }
+      
+    .mob-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: 10px;
+        padding: 30px 0;
+        overflow: hidden;
+        font-size: 0.8rem;
+        line-height: 17px;
+        width: 87%;
+        margin-left: 27px;
+        color: white;
+    }
+      
+    .mob-content > * {
+        opacity: 0;
+        transition: all 0.6s ease;
+    }
+      
+    [type="radio"]:checked ~ label {
+        background: white;
+        border-bottom: 1px solid white;
+        z-index: 1;
+    }
+      
+    [type="radio"]:checked ~ label ~ .mob-content {
+        z-index: 1;
+    }
+      
+    [type="radio"]:checked ~ label ~ .mob-content > * {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .mob-content-1, .mob-content-2, .mob-content-3{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .left-1, .left-2, .left-3{
+        width: 40%;
+    }
+
+    .mob-content-1{
+        margin-top: 0;
+    }
+
+    .right-1, .right-2, .right-3{
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    /* //mobile tabs */
+    
+}

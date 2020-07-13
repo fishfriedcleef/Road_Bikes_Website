@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="more-info.css">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Rubik:300,400&display=swap" rel="stylesheet">
+    <title>More Information</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD9/f0AAAAAAP///wASEhIABAQEACsrKwAUFBQAOgfwAGJiYgD+/v4A0NDQAAfwXABRUVEA+/v7AExMTAAAAAAAERERERERERERERERERERERERERERERERIhFCIiIsESIhIiEiIhIiEhkiISKZGZIhEisiJ3nXciglKyEHJxlyEioRuXInlxbiIiJ3IiKXIiIiInd3d3IiIiIiGSIiMRIiIiIREiIiIiIRERERERERERERERERERERERERERERERH//wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="inner-header">
+                <a href="index.html">
+                    <div class="bike-logo">
+                        <img src="images/svgs/bike-logo.svg" alt="">
+                    </div>
+                </a>
+                <ul class="navigation">
+                    <a class="type" href="type.html">
+                        <li>Shop by Type</li>
+                    </a>
+                    <a class="family" href="family.html">
+                        <li>Road Bikes Family</li>
+                    </a>
+                    <a class="story" href="story.html">
+                        <li>Our Story</li>
+                    </a>
+                    <ul class="right-nav">
+                            <a class="search" href="#">
+                                <li> <img src="images/svgs/search.svg" alt=""> </li>
+                            </a>
+                            <a class="basket" id="basket" href="#">
+                                <li><img src="images/svgs/shopping-basket.svg" alt=""></li>
+                                <p id="basketCount" class="basket-count">0</p>
+                            </a>
+                        <a onclick="modalOpen()" class="login" id="login" href="#">
+                            <li>Login/Register</li>
+                        </a>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- grid -->
+
+        <div class="goals">
+            <div class="left-text">
+                <h1>Our Goals as a Communtity of Bikers</h1>
+            </div>
+            <div class="slanted-decor">
+                <img src="images/slanted-decor.svg" alt="">
+            </div>
+            <div class="middle-line"></div>
+            <div class="right-content">
+                <iframe class="video" width="670" height="400" src="https://www.youtube.com/embed/-IzVGjWy070" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="pic-box box-1">
+                    <img src="images/happy-goals.jpg" alt="">
+                </div>
+                <div class="pic-box box-2">
+                    <img src="images/happy-goals-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact">
+            <div class="splitting-line"></div>
+            <div class="content-box">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4885.452021122515!2d-1.538988724244944!3d52.248360123705645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487734eea1912771%3A0xec553970db2fc7bb!2syour%20mum%20ux%20ltd!5e0!3m2!1sen!2suk!4v1583751124948!5m2!1sen!2suk" width="1250" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div class="nature-decor">
+                    <img src="images/family.jpg" alt="">
+                </div>
+                <div class="contact-info">
+                    <h1>Contact Us :</h1>
+                    <ul class="info">
+                        <li>Mobile : 07564483392</li>
+                        <li>Telephone : 01252 736281</li>
+                        <li>Email : RoadBikes@bikers.co.uk</li>
+                        <li>Fax : +44 41 444-5555</li>
+                    </ul>
+                </div>
+                <h1 class="visit">Visit Us :</h1>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="inner-footer">
+                <h1>Road Bikes</h1>
+                <p class="roar-r">®</p>
+                <div class="social-info">
+                    <img class="facebook" src="images/facebook.svg" alt="">
+                    <img class="twitter" src="images/twitter.svg" alt="">
+                    <img class="instagram" src="images/instagram.svg" alt="">
+                    <a href="#" data-tool-tip="Report bug"><img class="bug" src="images/bug.svg" alt=""></a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- modal -->
+
+        <div id="modal" class="modal">
+            <div class="inner-modal">
+                <div onclick="modalClose()" class="close">+</div>
+                <input class="email" type="text" placeholder="Enter Email Address">
+                <input class="password" type="text" placeholder="Enter Password">
+                <input class="confirm" type="text" placeholder="Confirm Password">
+                <div class="modal-button">
+                    <a href="#">Submit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket-modal" id="basketModal">
+            <div id="basketContainer" class="basket-container">
+                <div id="basket-content" class="basket-content"></div>
+                <div id="basketClose" class="basket-close">+</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- java -->
+
+    <script src="alt-basket.js"></script>
+
+    <script>
+        function modalOpen(){
+            document.getElementById('modal').style.display = 'flex'
+        }
+
+        function modalClose(){
+            document.getElementById('modal').style.display = 'none'
+        }
+    </script>
+
+    <!-- //java -->
+    
+</body>
+</html>

@@ -1,0 +1,714 @@
+/* important / grid */
+
+body{
+    background-color: #4B6573 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 189px 1451px 1fr ;
+    grid-template-rows: 95px 40px 70px 688px 1000px 70px 95px;
+    grid-template-areas: 
+    "header header header header"
+    ". top-null top-null ."
+    ". type-bar title ."
+    ". type-bar featured ."
+    ". main main ."
+    "null-footer null-footer null-footer null-footer"
+    "footer footer footer footer";
+}
+
+h1, h2, h3 {
+    font-family: 'rubik', sans-serif;
+}
+
+p{
+    font-family: 'karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-2{
+    display: none;
+}
+
+.header{
+    grid-area: header;
+    background-color: #232323;
+}
+
+.top-null{
+    grid-area: top-null;
+}
+
+.featured-title{
+    grid-area: title;
+}
+
+.type-bar{
+    grid-area: type-bar;
+    position: relative;
+}
+
+.featured{
+    grid-area: featured;
+    position: relative;
+}
+
+.road-bikes{
+    grid-area: road-bikes;
+}
+
+.main{
+    grid-area: main;
+    margin-top: 100px;
+    position: relative;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.null-footer{
+    grid-area: null-footer;
+}
+
+/* //important / grid */
+
+/* header */
+
+.inner-header{
+    width: 1640px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.bike-logo{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.bike-logo img{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 222px;
+}
+
+.navigation, .right-nav{
+    height: 100%;
+    margin-left: 250px;
+}
+
+.navigation a{
+    display: table;
+    height: 100%;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li, .right-nav a li{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.right-nav a{
+    display: table;
+    height: 100%;
+    float: right;
+    padding: 0px 20px;
+}
+
+.search{
+    margin-top: 3px;
+    opacity: 0.8;
+}
+
+.basket{
+    opacity: 0.8;
+}
+
+.basket-count{
+    color: white;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.login{
+    margin-right: 70px;
+    opacity: 0.8;
+}
+
+.type{
+    opacity: 0.8;
+}
+
+.family li{
+    opacity: 0.8;
+}
+
+.story li{
+    opacity: 0.8;
+}
+
+/* //header */
+
+/* nav hover */
+
+.basket:hover{
+    opacity: 1;
+}
+
+.search:hover{
+    opacity: 1;
+}
+
+.login:hover{
+    opacity: 1;
+}
+
+.type:hover{
+    opacity: 1;
+}
+
+.story li:hover{
+    opacity: 1;
+}
+
+.family li:hover{
+    opacity: 1;
+}
+
+.bike-logo:hover{
+    opacity: 0.8;
+}
+
+/* //nav hover */
+
+/* main */
+
+.link{
+    margin-right: 50px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'rubik', sans-serif;
+}
+
+.link-1{
+    margin-top: 30px;
+}
+
+#data-links{
+    background-color: #334854;
+    padding: 30px 0;
+    margin-bottom: 50px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.selector-row-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.selector-row-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectorBoxes{
+    height: 320px;
+    width: 350px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.616);
+    background-color: #334854;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.selector1-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    line-height: 24px;
+}
+
+.page{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.5rem;
+    font-family: rubik, sans-serif;
+    border: 2px solid white;
+    width: 75px;
+    padding: 7px 10px;
+    background-color: #334854;
+    margin-top: -20px;
+}
+/* //main */
+
+/* main side bar */
+
+.type-bar p{
+    margin-bottom: 30px;
+    margin-right: 45px;
+    font-size: 1.2rem;
+    font-family: rubik, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar-line{
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    height: 400px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 15%;
+}
+
+/* //main side bar */
+
+/* featured title */
+
+.featured-title h1{
+    font-size: 2.5rem;
+    color: white;
+    font-family: rubik, sans-serif;
+}
+
+.featured-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* //featured title */
+
+/* modal */
+
+.modal{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+}
+
+.inner-modal{
+    width: 511px;
+    height: 300px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 2.5rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+input{
+    display: block;
+    margin-bottom: 15px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 30px;
+}
+
+.email{
+    margin-top: 60px;
+}
+
+.modal-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.email, .password, .confirm{
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.modal-button{
+    border: 2px solid black;
+    padding: 15px 30px;
+    margin: 35px auto 0 auto;
+    text-decoration: none;
+    color: white;
+    background-color: #4B6573;
+    width: 70px;
+}
+
+.inner-modal a{
+    margin-top: 50px;
+}
+
+/* //modal */
+
+/* basket modal */
+
+.basket-container{
+    background-color: rgba(0, 0, 0, 0.596);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    position: fixed;
+}
+
+.basket-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    background-color: #334854;
+}
+
+.basket-close{
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    top: 110px;
+    right: 210px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+/* //basket modal */
+
+/* footer */
+
+.footer{
+    background-color: #232323;
+    width: 100%;
+    height: 95px;
+}
+
+/* //footer */
+
+/* media */
+
+@media only screen and (max-width: 425px){
+
+    /* important */
+
+    body, html{
+        background-color: #293842;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: none;
+    }
+
+    .container-2{
+        display: block;
+    }
+
+    .container{
+        display: none;
+    }
+
+    .main{
+        display: none;
+    }
+
+    footer, .inner-footer{
+        display: none;
+    }
+
+    /* //important */
+    
+    /* header */
+    
+    .hamburger-menu{
+        position: absolute;
+        right: 4%;
+        top: 2.5%;
+    }
+    
+    .header-back{
+        position: absolute;
+        background-color: #334854;
+        width: 100%;
+        top: 0;
+        height: 8%;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.486);
+    }
+    
+    .close{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 3.2rem;
+        transform: rotate(45deg);
+        cursor: pointer;
+        color: white;
+    }
+    
+    label{
+        padding: 0.5rem 1rem;
+        position: absolute;
+        right: 3.5%;
+        top: 2%;
+        z-index: 4;
+        height: 15px;
+        position: fixed;
+    }
+    
+    .hidden{
+        left: -100vh;
+        position: absolute;
+    }
+    
+    .line{
+        width: 25px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    .line-2{
+        margin-top: 5px;
+    }
+    
+    .line-3{
+        margin-top: 5px;
+    }
+    
+    #toggle:checked ~ .hamburger-active{
+        display: block;
+    }
+    
+    #toggle:checked ~ .hamburger-active a{
+        display: block;
+    }
+    
+    .logo{
+        position: absolute;
+        left: 20px;
+        top: 5px;
+    }
+    
+    /* //header */
+
+    /* hamburger active */
+    
+    
+    .hamburger-active{
+        background-color: #4B6573;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        display: none;
+        z-index: 2;
+        position: fixed;
+    }
+    
+    .hamburger-active a{
+        color: white;
+        font-size: 1.8rem;
+        display: none;
+        z-index: 2;
+    }
+    
+    .home{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .account{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .bikes{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .mob-type{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .contact{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    /* //hamburger active */
+    
+    /* account-info */
+    
+    .account-info{
+        height: 46%;
+        width: 100%;
+        background-color: #232F34;
+        box-shadow: 3px 3px 3px black;
+    }
+    
+    .separator{
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.555);
+        position: absolute;
+        top: 8.5%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .account-info h1{
+        font-size: 1.5rem;
+        position: absolute;
+        width: 300px;
+        text-align: center;
+        top: 34%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .profile-picture{
+        width: 30%;
+        height: 13%;
+        border-radius: 15px;
+        border: 2px solid white;
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .social-info{
+        display: flex;
+        justify-content: space-between;
+        width: 65px;
+        position: absolute;
+        right: 4%;
+        top: 41.5%;
+    }
+    
+    .social-info img{
+        width: 18px;
+    }
+
+    /* //account-info */
+    
+    /* box options */
+    
+    .box-option{
+        width: 92%;
+        height: 281px;
+        border: 2px solid white;
+        margin: 0 auto 13px auto;
+        overflow: hidden;
+    }
+    
+    .box-1{
+        margin-top: 72px;
+        position: relative;
+    }
+    
+    .box-1 img{
+        width: 130%;
+        margin-left: -50px;
+        margin-top: -10px;
+    }
+    
+    .overlay-box-1{
+        background-color: rgba(75, 101, 115, 0.74);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+    
+    .box-2{
+        position: relative;
+    }
+    
+    .box-2 img{
+        position: absolute;
+        width: 100%;
+    }
+    
+    .overlay-box-2{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(75, 101, 115, 0.74);
+        position: absolute;
+    }
+    
+    .box-3{
+        position: relative;
+    }
+    
+    .box-3 img{
+        width: 400px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .overlay-box-3{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(75, 101, 115, 0.74);
+        position: absolute;
+    }
+    
+    .home-title{
+        text-align: center;
+        font-size: 1.25rem;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    /* //box options */
+    
+}
+
+/* //media */

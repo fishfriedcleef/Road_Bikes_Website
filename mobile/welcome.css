@@ -1,0 +1,108 @@
+/* important */
+
+html, body{
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* //important */
+
+/* greeting */
+
+.home-back{
+    z-index: -2;
+    position: absolute;
+    top: -330px;
+    width: 180%;
+}
+
+.overlay{
+    background-color: rgba(5, 93, 152, 0.233);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.welcome-content{
+    width: 90%;
+    margin: 360px auto 0 auto;
+}
+
+.welcome-line{
+    width: 25%;
+    border: 2px solid rgba(255, 255, 255, 0.863);
+    margin: 35px auto 0 auto;
+}
+
+.welcome-text{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.welcome-text h1{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.93);
+    margin-bottom: 12px;
+}
+
+.welcome-text p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.93);
+    line-height: 17px;
+}
+
+/* //greeting */
+
+/* button */
+
+.login-social{
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    margin: 35px auto 0 auto;
+}
+
+.login, .sign-up{
+    width: 145px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid transparent;
+    color: #232F34;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    font-family: 'rubik', sans-serif;
+}
+
+.sign-up{
+    background-color: rgba(255, 255, 255, 0.836);
+}
+
+/* //button */
+
+/* social media */
+
+.link-login{
+    margin: 0 auto;
+    width: 22%;
+}
+
+.link-content img{
+    width: 20px;
+}
+
+.link-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* //social media */

@@ -1,0 +1,147 @@
+/* boxes */
+
+.row-1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row-2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row-2 .featured-box{
+    width: 355px;
+    height: 345px;
+    border: 2px solid white;
+    margin-left: 18px;
+    margin-top: -349px;
+    overflow: hidden;
+    position: relative;
+}
+
+.row-2 .featured-box img{
+    width: 150%;
+    margin-left: -130px;
+}
+
+.vertical-box{
+    height: 689px;
+    width: 315px;
+    border: 2px solid white;
+    overflow: hidden;
+    position: relative;
+}
+
+.vertical-box img{
+    width: 170%;
+    margin-top: -80px;
+    margin-left: -180px;
+}
+
+.horizontal-box{
+    width: 1109px;
+    height: 323px;
+    border: 2px solid white;
+    overflow: hidden;
+    margin-left: 19px;
+    position: relative;
+}
+
+.horizontal-box img{
+    width: 100%;
+    margin-top: -550px;
+}
+
+/* //boxes */
+
+/* overlay */
+
+.overlay-1{
+    width: 100%;
+    height: 100%;
+    background-color: #334854;
+    position: absolute;
+    opacity: 0;
+}
+
+.overlay-2{
+    width: 100%;
+    height: 100%;
+    background-color: #334854;
+    position: absolute;
+    opacity: 0;
+}
+
+.overlay-3{
+    width: 100%;
+    height: 100%;
+    background-color: #334854;
+    position: absolute;
+    opacity: 0;
+}
+
+.overlay-4{
+    width: 100%;
+    height: 100%;
+    background-color: #334854;
+    position: absolute;
+    opacity: 0;
+}
+
+.overlay-5{
+    width: 100%;
+    height: 100%;
+    background-color: #334854;
+    position: absolute;
+    opacity: 0;
+}
+
+/* //overlay */
+
+
+/* animation */
+
+.vertical-box:hover .overlay-1{
+    opacity: 0.75;
+    transition-duration: 0.5s;
+}
+
+.horizontal-box:hover .overlay-2{
+    opacity: 0.75;
+    transition-duration: 0.5s;
+}
+
+.row-2 .featured-box:hover .overlay-3{
+    opacity: 0.75;
+    transition-duration: 0.5s;
+}
+
+.row-2 .featured-box:hover .overlay-4{
+    opacity: 0.75;
+    transition-duration: 0.5s;
+}
+
+.row-2 .featured-box:hover .overlay-5{
+    opacity: 0.75;
+    transition-duration: 0.5s;
+}
+
+/* //animation */
+
+/* overlay text */
+
+.overlay h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    opacity: 1;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+/* //overlay text */

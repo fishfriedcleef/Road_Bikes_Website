@@ -1,0 +1,217 @@
+/* important */
+
+body{
+    background-color: #4B6573;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* //important */
+
+/* header */
+
+.hamburger-menu{
+    position: absolute;
+    right: 4%;
+    top: 2.5%;
+}
+
+.header-back{
+    position: absolute;
+    background-color: #334854;
+    width: 100%;
+    top: 0;
+    height: 8%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.486);
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 3.2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: white;
+}
+
+label{
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 3.5%;
+    top: 2%;
+    z-index: 4;
+    height: 15px;
+    position: fixed;
+}
+
+.hidden{
+    left: -100vh;
+    position: absolute;
+}
+
+.line{
+    width: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.line-2{
+    margin-top: 5px;
+}
+
+.line-3{
+    margin-top: 5px;
+}
+
+#toggle:checked ~ .hamburger-active{
+    display: block;
+}
+
+#toggle:checked ~ .hamburger-active a{
+    display: block;
+}
+
+.logo{
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+/* //header */
+
+/* hamburger active */
+
+.hamburger-active{
+    background-color: #4B6573;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: 2;
+    position: fixed;
+}
+
+.hamburger-active a{
+    color: white;
+    font-size: 1.8rem;
+    display: none;
+    z-index: 2;
+}
+
+.home{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.account{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bikes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.type{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contact{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* //hamburger active */
+
+/* search */
+
+.search-bar{
+    margin-top: 65px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    right: 20px;
+    border-radius: 15px;
+    padding: 5px 7px;
+    width: 42%;
+    float: right;
+}
+
+.search{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#searchBtn{
+    right: 22px;
+    margin-top: 72px;
+}
+
+.search-image{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+
+.no-results{
+    font-size: 1.5rem;
+    color: white;
+    margin: 290px 0 7px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.noresult-p{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* //search */
+
+
+/* box */
+
+.box{
+    width: 88.5%;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin: 15px auto 0 auto;
+    color: white;
+    overflow: hidden;
+}
+
+.name{
+    margin: -100px 0 0 15px;
+    position: absolute;
+}
+
+.price{
+    margin: -30px 0 0 275px;
+    position: absolute;
+}
+
+.box-images{
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+/* //box */

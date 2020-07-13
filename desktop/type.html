@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="type.css">
+    <link rel="stylesheet" href="type-animations.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Rubik:300,400,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>Shop by Type</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD9/f0AAAAAAP///wASEhIABAQEACsrKwAUFBQAOgfwAGJiYgD+/v4A0NDQAAfwXABRUVEA+/v7AExMTAAAAAAAERERERERERERERERERERERERERERERERIhFCIiIsESIhIiEiIhIiEhkiISKZGZIhEisiJ3nXciglKyEHJxlyEioRuXInlxbiIiJ3IiKXIiIiInd3d3IiIiIiGSIiMRIiIiIREiIiIiIRERERERERERERERERERERERERERERERH//wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="inner-header">
+                <a href="index.html">
+                    <div class="bike-logo">
+                        <img src="images/svgs/bike-logo.svg" alt="">
+                    </div>
+                </a>
+                <ul class="navigation">
+                    <a class="type" href="type.html">
+                        <li>Shop by Type</li>
+                    </a>
+                    <a class="family" href="family.html">
+                        <li>Road Bikes Family</li>
+                    </a>
+                    <a class="story" href="story.html">
+                        <li>Our Story</li>
+                    </a>
+                    <ul class="right-nav">
+                            <a class="search" href="#">
+                                <li> <img src="images/svgs/search.svg" alt=""> </li>
+                            </a>
+                            <a class="basket" id="basket" href="#">
+                                <li><img src="images/svgs/shopping-basket.svg" alt=""></li>
+                                <p id="basketCount" class="basket-count">0</p>
+                            </a>
+                        <a onclick="modalOpen()" class="login" id="login" href="#">
+                            <li>Login/Register</li>
+                        </a>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- grid -->
+
+        <div class="top-null"></div>
+        <div class="featured-title">
+            <h1>
+                Featured
+            </h1>
+        </div>
+        <div class="type-bar">
+            <a href="#"><p>Bikes</p></a>
+            <a href="#"><p>Helmets/Straps</p></a>
+            <a href="#"><p>Biking Parts</p></a>
+            <a href="#"><p>Clothing</p></a>
+            <a href="#"><p>Foot Wear</p></a>
+            <a href="#"><p>Computers</p></a>
+            <a href="#"><p>Compressors</p></a>
+            <a href="#"><p>Nutrition</p></a>
+            <div class="sidebar-line"></div>
+        </div>
+        <div class="featured">
+            <div class="featured-boxes">
+                <div class="row-1">
+                    <div class="vertical-box">
+                        <div class="overlay-1 overlay">
+                            <h1>Bikerton Folder</h1>
+                        </div>
+                            <img src="images/bikes/featured-2.jpg" alt="">
+                    </div>
+                    <div class="horizontal-box">
+                        <div class="overlay-2 overlay">
+                            <h1>Browing Mistake</h1>
+                        </div>
+                        <img src="images/bikes/featured-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="featured-box">
+                        <div class="overlay-3 overlay">
+                            <h1>B'twin Hybrid Bike</h1>
+                        </div>
+                        <img src="images/bikes/featured-3.jpg" alt="">
+                    </div>
+                    <a href="product.html">
+                        <div class="featured-box">
+                            <div class="overlay-4 overlay">
+                                <h1>Fawlands BMX</h1>
+                            </div>
+                            <img src="images/bikes/featured-1.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="featured-box">
+                        <div class="overlay-5 overlay">
+                            <h1>Johnson Town Bike</h1>
+                        </div>
+                        <img src="images/bikes/featured-5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="main">
+                <div id="data-links">
+                    <a class="link link-1" id="link-1" href="#about" data-link="first" onclick="roadObjectClick()">Road Bikes</a>
+                    <a class="link link-2" id="link-2" href="#about" data-link="second" onclick="cityObjectClick()">City Bikes</a>
+                    <a class="link link-3" id="link-3" href="#about" data-link="third" onclick="speedObjectClick()">Speed Bikes</a>
+                    <a class="link link-4" id="link-4" href="#about" data-link="fourth" onclick="familyObjectClick()">For the Family</a>
+                    <a class="link link-5" id="link-5" href="#about" data-link="fifth" onclick="touringObjectClick()">Touring Bikes</a>
+                    <a class="link link-6" id="link-6" href="#about" data-link="sixth" onclick="electronicObjectClick()">Electronic Bikes</a>
+                </div>
+        
+            
+                <div id="boxes-1" class="boxes-1">
+                    <div class="selector-row-1">
+                        <div id="selectorBoxes" class="selectorBoxes">
+                            <div class="selector1-inner">
+                                <h4></h4>
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div id="selectorBoxes" class="selectorBoxes">
+                            <div class="selector1-inner">
+                                <h4></h4>
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div id="selectorBoxes" class="selectorBoxes">
+                            <div class="selector1-inner">
+                                <h4></h4>
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div id="selectorBoxes" class="selectorBoxes">
+                            <div class="selector1-inner">
+                                <h4></h4>
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector-row-2">
+                        <div id="selectorBoxes" class="selectorBoxes">
+                            <div class="selector1-inner">
+                                <h4></h4>
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div id="selectorBoxes" class="selectorBoxes">
+                            <div class="selector1-inner">
+                                <h4></h4>
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div id="selectorBoxes" class="selectorBoxes">
+                            <div class="selector1-inner">
+                                <h4></h4>
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div id="selectorBoxes" class="selectorBoxes">
+                            <div class="selector1-inner">
+                                <h4></h4>
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page"><p>Page 1</p></div>
+            <div class="null-footer"></div>
+            </div>
+            <div class="footer"></div>
+
+        <!-- //grid -->
+
+        <div id="modal" class="modal">
+        <div class="inner-modal">
+            <div onclick="modalClose()" class="close">+</div>
+            <input class="email" type="text" placeholder="Enter Email Address">
+            <input class="password" type="text" placeholder="Enter Password">
+            <input class="confirm" type="text" placeholder="Confirm Password">
+            <div class="modal-button">
+                <a href="#">Submit</a>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="basket-modal" id="basketModal">
+        <div id="basketContainer" class="basket-container">
+            <div id="basket-content" class="basket-content"></div>
+            <div id="basketClose" class="basket-close">+</div>
+        </div>
+    </div>
+
+    <!-- mobile -->
+
+    <div class="container-2">
+        <div class="header-back"></div>
+        <div class="logo">
+            <img src="images/svgs/mob-logo.svg" alt="">
+        </div>
+        <label for="toggle"></label>
+        <input type="checkbox" id="toggle" class="hidden">
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+    
+        <div class="hamburger-active">
+            <div class="close">+</div>
+            <ul>
+                <li><a class="home" href="type.html">Home</a></li>
+                <li><a class="account" href="../mobile/account.html">Account</a></li>
+                <li><a class="bikes" href="family.html">Road Family</a></li>
+                <li><a class="mob-type" href="../mobile/mob-type.html">Shop by Type</a></li>
+                <li><a class="contact" href="../mobile/login.html">Sign Out</a></li>
+            </ul>
+        </div>
+
+        <div class="box-options">
+            <div class="box-option box-1">
+                <img src="images/bikes/featured-1.jpg" alt="">
+                <div class="overlay-box-1">
+                    <h1 class="home-title">Featured</h1>
+                </div>
+            </div>
+            <div class="box-option box-2">
+                <img src="images/bikes/featured-4.jpg" alt="">
+                <a href="../mobile/mob-type.html">
+                    <div class="overlay-box-2">
+                        <h1 class="home-title">Shop by Type</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="box-option box-3">
+                <img src="images/family.png" alt="">
+                <a href="family.html">
+                    <div class="overlay-box-3">
+                        <h1 class="home-title">Roar Family</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- java -->
+
+    <script src="alt-basket.js"></script>
+    <script src="typeBoxContent.js"></script>
+
+    <script>
+        function modalOpen(){
+            document.getElementById('modal').style.display = 'flex'
+        }
+
+        function modalClose(){
+            document.getElementById('modal').style.display = 'none'
+        }
+    </script>
+    <!-- //java -->
+    
+</body>
+
+</html>

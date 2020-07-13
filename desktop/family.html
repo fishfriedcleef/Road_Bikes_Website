@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="family.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Rubik:300,400,900&display=swap" rel="stylesheet">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD9/f0AAAAAAP///wASEhIABAQEACsrKwAUFBQAOgfwAGJiYgD+/v4A0NDQAAfwXABRUVEA+/v7AExMTAAAAAAAERERERERERERERERERERERERERERERERIhFCIiIsESIhIiEiIhIiEhkiISKZGZIhEisiJ3nXciglKyEHJxlyEioRuXInlxbiIiJ3IiKXIiIiInd3d3IiIiIiGSIiMRIiIiIREiIiIiIRERERERERERERERERERERERERERERERH//wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    <title>Our Story</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="inner-header">
+                <a href="index.html">
+                    <div class="bike-logo">
+                        <img src="images/svgs/bike-logo.svg" alt="">
+                    </div>
+                </a>
+                <ul class="navigation">
+                    <a class="type" href="type.html">
+                        <li>Shop by Type</li>
+                    </a>
+                    <a class="family" href="family.html">
+                        <li>Road Bikes Family</li>
+                    </a>
+                    <a class="story" href="story.html">
+                        <li>Our Story</li>
+                    </a>
+                    <ul class="right-nav">
+                        <a class="search" href="#">
+                            <li> <img src="images/svgs/search.svg" alt=""> </li>
+                        </a>
+                        <a class="basket" id="basket" href="#">
+                            <li><img src="images/svgs/shopping-basket.svg" alt=""></li>
+                            <p id="basketCount" class="basket-count">0</p>
+                        </a>
+                        <a onclick="modalOpen()" class="login" id="login" href="#">
+                            <li>Login/Register</li>
+                        </a>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="move-cards"></div>
+            <div class="marathon">
+                <div class="marathon-content">
+                    <h2>Cheshire Bike Marathon</h2>
+                    <p>Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan justo, quis tempor ligula.
+                        Quisque quis
+                        pharetra felis. Ut quis consequat orci, at consequat felis.</p>
+                    <button class="marathon-button">Read More</button>
+                </div>
+            </div>
+            <div class="autism">
+                <div class="autism-content">
+                    <h2>Cycle for Autism</h2>
+                    <p>Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan justo, quis tempor ligula.
+                        Quisque quis
+                        pharetra felis. Ut quis consequat orci, at consequat felis.</p>
+                    <button class="autism-button">Read More</button>
+                </div>
+            </div>
+            <div class="rights">
+                <div class="rights-content">
+                    <h2>Bikes, Dykes and Rights</h2>
+                    <p>Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan justo, quis tempor ligula.
+                        Quisque quis
+                        pharetra felis. Ut quis consequat orci, at consequat felis.</p>
+                    <button class="rights-button">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <div class="title-content">
+                <h2>Road Bikes</h2>
+                <h1>Biking Community</h1>
+            </div>
+        </div>
+
+        <div class="community-images">
+            <div class="com-image-1">
+                <img class="person-1" src="images/peopleonbikes/personbike-2.jpg" alt="">
+            </div>
+            <div class="com-image-2">
+                <img class="person-2" src="images/peopleonbikes/personbike-1.jpg" alt="">
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <div class="community-creations">
+            <img class="parallax" id="parallax" src="images/peopleonbikes/paralax.jpg" alt="">
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="inner-modal">
+                <div onclick="modalClose()" class="close">+</div>
+                <input class="email" type="text" placeholder="Enter Email Address">
+                <input class="password" type="text" placeholder="Enter Password">
+                <input class="confirm" type="text" placeholder="Confirm Password">
+                <div class="modal-button">
+                    <a href="#">Submit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket-modal" id="basketModal">
+            <div id="basketContainer" class="basket-container">
+                <div id="basket-content" class="basket-content"></div>
+                <div id="basketClose" class="basket-close">+</div>
+            </div>
+        </div>
+        <!-- <div class="footer"></div> -->
+    </div>
+
+    <!-- mobile -->
+
+    <div class="container-2">
+        <div class="header-back"></div>
+        <div class="logo">
+            <a href="type.html"><img src="images/svgs/mob-logo.svg" alt=""></a>
+        </div>
+        <label for="toggle"></label>
+        <input type="checkbox" id="toggle" class="hidden">
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+    
+        <div class="hamburger-active">
+            <div class="close">+</div>
+            <ul>
+                <li><a class="home" href="type.html">Home</a></li>
+                <li><a class="account" href="../mobile/account.html">Account</a></li>
+                <li><a class="bikes" href="family.html">Road Family</a></li>
+                <li><a class="mob-type" href="../mobile/mob-type.html">Shop by Type</a></li>
+                <li><a class="contact" href="../mobile/login.html">Sign Out</a></li>
+            </ul>
+        </div>
+
+        <div class="decor">
+            <img src="../mobile/mob-images/svgs/mobfamily-decor.svg" alt="">
+        </div>
+
+        <div class="top-info">
+            <h1>The Road Bikes Family</h1>
+            <p>Vivamus eget aliquam dui. Integer eu arcu vel arcu suscipit ultrices quis non mauris. Aenean scelerisque, sem eu dictum commodo, velit nisi blandit magna, quis scelerisque ipsum </p>
+        </div>
+    </div>
+
+    <!-- java -->
+
+    <script src="alt-basket.js"></script>
+
+    <script>
+        function modalOpen(){
+            document.getElementById('modal').style.display = 'flex'
+        }
+
+        function modalClose(){
+            document.getElementById('modal').style.display = 'none'
+        }
+    </script>
+
+    <script>
+        var parallax = document.getElementById('parallax');
+        parallax.onmouseout = function(){
+            parallax.style.transitionDuration = '0.5s'
+            parallax.style.width = '140%';
+            parallax.style.opacity = '0.5'
+        }
+        parallax.onmouseover = function(){
+            parallax.style.transitionDuration = '0.5s'
+            parallax.style.width = '150%';
+            parallax.style.opacity = '0.8'
+        }
+    </script>
+    <!-- //java -->
+
+</body>
+
+</html>

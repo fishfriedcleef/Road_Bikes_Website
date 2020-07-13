@@ -1,0 +1,482 @@
+/* important */
+
+body{
+    background-color: #293842;
+    font-family: rubik, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1640px 1fr;
+    grid-template-rows: 95px 870px 1100px 95px;
+    grid-template-areas: 
+    "header header header"
+    ". goals ."
+    "contact contact contact"
+    "footer footer footer";
+}
+
+h1, h2, h3{
+    font-family: 'rubik', sans-serif;
+}
+
+p{
+    font-family: 'karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    grid-area: header;
+    background-color: #232323;
+}
+
+.goals{
+    grid-area: goals;
+    position: relative;
+}
+
+.contact{
+    grid-area: contact;
+    position: relative;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* //important */
+
+/* header */
+
+.inner-header{
+    width: 1640px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.bike-logo{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.bike-logo img{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 222px;
+}
+
+.navigation, .right-nav{
+    height: 100%;
+    margin-left: 250px;
+}
+
+.navigation a{
+    display: table;
+    height: 100%;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li, .right-nav a li{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.right-nav a{
+    display: table;
+    height: 100%;
+    float: right;
+    padding: 0px 20px;
+}
+
+.search{
+    margin-top: 3px;
+    opacity: 0.8;
+}
+
+.basket{
+    opacity: 0.8;
+}
+
+.basket-count{
+    color: white;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.login{
+    margin-right: 70px;
+    opacity: 0.8;
+}
+
+.type{
+    opacity: 0.8;
+}
+
+.family li{
+    opacity: 0.8;
+}
+
+.story li{
+    opacity: 0.8;
+}
+
+/* nav hover */
+
+.basket:hover{
+    opacity: 1;
+}
+
+.search:hover{
+    opacity: 1;
+}
+
+.login:hover{
+    opacity: 1;
+}
+
+.type:hover{
+    opacity: 1;
+}
+
+.story li:hover{
+    opacity: 1;
+}
+
+.family li:hover{
+    opacity: 1;
+}
+
+.bike-logo:hover{
+    opacity: 0.8;
+}
+
+/* //header */
+
+/* modal */
+
+.modal{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+}
+
+.inner-modal{
+    width: 511px;
+    height: 300px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 2.5rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+input{
+    display: block;
+    margin-bottom: 15px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 30px;
+}
+
+.email{
+    margin-top: 60px;
+}
+
+.modal-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.email, .password, .confirm{
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.modal-button{
+    border: 2px solid black;
+    padding: 15px 30px;
+    margin: 35px auto 0 auto;
+    text-decoration: none;
+    color: white;
+    background-color: #4B6573;
+    width: 70px;
+}
+
+.inner-modal a{
+    margin-top: 50px;
+}
+
+/* //modal */
+
+/* basket modal */
+
+.basket-container{
+    background-color: rgba(0, 0, 0, 0.596);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    position: fixed;
+}
+
+.basket-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    background-color: #334854;
+}
+
+.basket-close{
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    top: 110px;
+    right: 210px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+/* //basket modal */
+
+/* goals */
+
+.middle-line{
+    height: 40%;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.445);
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.left-text{
+    color: white;
+    font-size: 5rem;
+    line-height: 95px;
+    width: 440px;
+    font-family: 'Coming Soon', cursive;
+    margin-top: 13%;
+}
+
+.slanted-decor img{
+    position: absolute;
+    top: 0;
+    left: -35%;
+    z-index: -1;
+}
+
+.right-content{
+    width: 1640px;
+    margin: 0 auto;
+}
+
+.video{
+    margin-top: -515px;
+    float: right;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.479);
+}
+
+.pic-box{
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    width: 19.9%;
+    height: 250px;
+    position: absolute;
+    margin-top: -105px;
+    right: 0;
+    overflow: hidden;
+}
+
+.pic-box img{
+    width: 140%;
+    margin-left: -100px;
+}
+
+.box-1{
+    right: 20.85%;
+}
+
+/* //goals */
+
+/* contact */
+
+.splitting-line{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 500px;
+}
+
+.content-box{
+    width: 1640px;
+    height: 900px;
+    background-color: #4B6573;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.map{
+    position: absolute;
+    top: 73%;
+    left: 44%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2)
+}
+
+.nature-decor{
+    width: 400px;
+    height: 700px;
+    border: 2px solid white;
+    position: absolute;
+    right: 6%;
+    top: -4%;
+    overflow: hidden;
+    z-index: -1;
+    box-shadow: 3px  6px 6px rgba(0, 0, 0, 0.582);
+}
+
+.nature-decor img{
+    margin-left: -275px;
+}
+
+.contact-info{
+    margin-top: 90px;
+}
+
+.contact-info h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.info{
+    color: white;
+    font-size: 1.50rem;
+    margin-left: 100px;
+}
+
+.info li{
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.visit{
+    font-size: 1.5rem;
+    margin-top: 100px;
+    color: white;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+/* //contact */
+
+/* footer */
+
+.footer{
+    background-color:#232323 ;
+    width: 100%;
+    left: 0;
+    bottom: 0;  
+}
+
+.inner-footer{
+    display: flex;
+    height: 95px;
+    background-color: #232323;
+    width: 1640px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer h1{
+    font-size: 2rem;
+    margin: auto 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+.social-info{
+    display: flex;
+}
+
+.social-info img{
+    width: 25px;
+    margin-left: 15px;
+}
+
+.roar-r{
+    font-size: 1rem;
+    margin: auto 0;
+    margin-right: 1290px;
+    color: white;
+}
+
+.bug{
+    width: 25px;
+    margin-left: 15px;
+    margin-top: 34px;
+}
+
+a[data-tool-tip]{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a[data-tool-tip]::after{
+    content: attr(data-tool-tip);
+    position: absolute;
+    display: block;
+    background-color: #70707077;
+    padding: 10px 20px;
+    border-radius: 15px;
+    bottom: 65%;
+    left: 90%;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: ease-in-out 0.2s;
+}
+
+a[data-tool-tip]:hover::after{
+    transform: scale(1);
+}
+
+/* //footer */
+
